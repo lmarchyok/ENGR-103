@@ -2,8 +2,8 @@
 
 LIGHT GAME
 
-Inputs: Button A, Button B
-Outputs: Sound outputs, Light outputs
+- Inputs: Button A, Button B
+- Outputs: Sound outputs, Light outputs
 
 Game details:
 
