@@ -106,12 +106,6 @@ void lvl1() {
 
   previous_time1 = millis();
 
-/*
-  for (int i; i<10; i++) {
-  Serial.println(correct_sequence[i]);
-  }
-*/
-
   next_correct_input = correct_sequence[0];
 
   Aflag = false;
@@ -184,12 +178,6 @@ void lvl2() {
 
   previous_time2 = millis();
 
- /*
-  for (int i; i<10; i++) {
-  Serial.println(correct_sequence[i]);
-  }
-*/
-
   next_correct_input = correct_sequence[0];
 
   Aflag = false;
@@ -261,12 +249,6 @@ void lvl3() {
   generate_pattern(3);
 
   previous_time3 = millis();
-
-/*
-  for (int i; i<10; i++) {
-  Serial.println(correct_sequence[i]);
-  }
-*/
 
   next_correct_input = correct_sequence[0];
 
@@ -397,42 +379,5 @@ void loop() {
     Serial.println("\nPlay again: A | Exit: B");
     delay(10000);
   }
-  }
-/*
-  while(switchflag == true) {
-    if (Aflag) {
-      switch(current_level) {
-
-        case 1:
-          CircuitPlayground.speaker.say(spRETURN);
-          CircuitPlayground.speaker.say(spTO);
-          CircuitPlayground.speaker.say(spLEVEL);
-          CircuitPlayground.speaker.say(spONE);
-          break;
-        case 2:
-          CircuitPlayground.speaker.say(spRETURN);
-          CircuitPlayground.speaker.say(spTO);
-          CircuitPlayground.speaker.say(spLEVEL);
-          CircuitPlayground.speaker.say(spTWO);
-          break;
-        case 3:
-          CircuitPlayground.speaker.say(spRETURN);
-          CircuitPlayground.speaker.say(spTO);
-          CircuitPlayground.speaker.say(spLEVEL);
-          CircuitPlayground.speaker.say(spTHREE);
-          break;
-      }
-    } else if (Bflag) {
-      CircuitPlayground.speaker.say(spRETURN);
-      CircuitPlayground.speaker.say(spTO);
-      CircuitPlayground.speaker.say(spSTART);
-      current_level = 0;
-      switchflag == false;
-      break;
-
-    }
-    Serial.println("\nRestart level: A | Restart game: B");
-    delay(10000);
-  }
-*/
+ }
 }
